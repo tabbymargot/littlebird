@@ -9,7 +9,9 @@
  Tags: two-columns, three-columns, one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options, light, white, dark, black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, yellow
 */
 
-/*Site-wide*/
+/**
+ * SITE-WIDE GENERAL
+ */
 
 .site-header {
     background-color: #4ddaeb;
@@ -35,30 +37,13 @@ body {
 	letter-spacing: 0.6px;
 }
 
-/*Typography*/
+
+/**
+ * SITE-WIDE TYPOGRAPHY
+ */
 
 .main-navigation a {
 	letter-spacing: 1px;
-}
-
-.little-bird-text, 
-.design-and-code-text {
-	display: block;
-	width: 90%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.little-bird-text {
-	font-family: Poppins, sans-serif;
-	font-size: 100px;
-	font-weight: 500;
-}
-
-.design-and-code-text {
-	font-family: 'Source Code Pro', sans-serif;
-	font-size: 50px;
-	font-weight: 500;
 }
 
 .highlighted-text {
@@ -69,46 +54,16 @@ body {
 	text-align: center;
 }
 
-blockquote {
-	font-family: "Source Code Pro", sans-serif;
-	font-size: 20px;
-	border-left: none;
-}
-
 h1 {
 	letter-spacing: 1.5px;
 	display: inline-block;
 	padding-bottom: 3px;
 }
 
-/*
-.h2-container {
-	text-align: center;
-}
-*/
-
-#generate-section-4 h2 {
-	color: #fff;
-}
-
-
 h2 {
-/*	margin-bottom: 60px;*/
 	letter-spacing: 1.5px;
 }
 
-.page-id-7 h2 {
-	margin-bottom: 0px;
-}
-
-/*
-.page-template-page-portfolio h2 {
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-	margin-bottom: 0;
-}
-*/
 
 h3 {
 	letter-spacing: 1.2px;
@@ -121,21 +76,6 @@ a, a:visited {
     border-bottom: 5px solid #3a3a3a;
 }
 
-/*Navigation*/
-#primary-menu a, 
-#primary-menu a:visited {
-	border-bottom: none;
-}
-
-/*Site-wide layout*/
-
-/*
-p {
-	max-width: 1000px;
-	margin: 1.5em auto;
-}
-*/
-
 .centered-content {
 	text-align: center;
 }
@@ -145,27 +85,32 @@ p {
 }
 
 
+/**
+ * NAVIGATION
+ */
 
-/*Home page layout*/
-
-/*
-.front-page-content {
-	text-align: center;
+#primary-menu a, 
+#primary-menu a:visited {
+	border-bottom: none;
 }
-*/
+
+
+/**
+ * HOME PAGE
+ */
 
 .page-id-7 .header-image,
 .page-id-7 .inside-header {
-	max-height: 0px;
+	max-height: 0;
 }
 
 .page-id-7 .inside-header {
-	padding: 0px;
+	padding: 0;
 }
 
-.wp-image-216 {
-	margin: 40px auto 100px;
-	max-width: 80%;
+.wp-image-216 /*little bird logo*/{
+    margin: 40px auto 100px;
+    max-width: 80%;
 }
 
 .little-bird-logo {
@@ -173,36 +118,37 @@ p {
 	width: 100%;
 }
 
-.wp-image-546 {
-/*	Lines 2 to 5 centre the image*/
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	top: 49px;
+.page-id-7 h2 {
+	margin-bottom: 0px;
 }
 
-#generate-section-4 .grid-5 { 
+#generate-section-4 .grid-5 {
 	min-height: 1px;
 }
 
-#generate-section-4 .grid-10 { 
+#generate-section-4 .grid-10 {
 	min-height: 1px;
-}
-
-.services-container {
-	text-align: center;
-	color: #fff;
 }
 
 .testimonial-quote {
 	font-size: 28px;
 }
 
-
 .testimonial-container {
 	text-align: left;
+}
+
+.testimonial-author {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+	text-align: right;
+	letter-spacing: 1.2px;
+}
+
+.services-container {
+	text-align: center;
+	color: #fff;
 }
 
 .icon-container {
@@ -213,26 +159,9 @@ p {
 	font-size: 16px;
 }
 
-.testimonial-author {
-	font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 16px;
-	text-align: right;
-	letter-spacing: 1.2px;
-}
-
-.front-page-quote-1 {
-	margin-top: 40px;
-}
-
-/*Font Awesome*/
-
-
-
-
-
-/*Images*/
+/**
+ * IMAGES
+ */
 
 .headshot {
 	background-size: cover;
@@ -241,7 +170,7 @@ p {
     border-radius: 50%;
 }
 
-.size-of-headshot /*Todo delete if not used*/ {
+.size-of-headshot {
     width: 30vw;
     height: 30vw;
     max-width: 293.33px;/*Max is one third of max width of "body .grid-container" which is 960px minus 80px padding, ie 880 divided by 3*/
@@ -258,32 +187,32 @@ p {
 	padding-bottom: 10px;
 }
 
-.caroline-photo /*Todo delete if not used*/ {
+.caroline-photo {
     background-image: url(../../../wp-content/uploads/2017/04/me-cropped-adjusted.jpg);
-	
 }
 
-
-
-.hannah-photo /*Todo delete if not used*/ {
+.hannah-photo {
     background-image: url(../../../wp-content/uploads/2017/05/han.jpg);
 }
 
-.andy-photo /*Todo delete if not used*/ {
+.andy-photo {
     background-image: url(../../../wp-content/uploads/2017/05/andy-and-dave-square-crop.jpg);
 }
 
-.wp-image-58 {
-	margin: 56px auto 60px;
+.wp-image-546 /*little bird icon page divider*/{
+/*	Lines 2 to 5 centre the image*/
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 49px;
 }
 
-/*
-.fa {
-	color: #f9be0c;
-}
-*/
 
-/*Buttons*/
+/**
+ * BUTTONS
+ */
 
 .my-button {
 	color: #fff;
@@ -302,7 +231,6 @@ p {
 	border-bottom: none;
 }
 
-
 a.services-button {
 	background-color: #fff;
 	color: #fa0548;
@@ -320,12 +248,14 @@ a.portfolio-button {
 	color: #3a3a3a !important;
 }
 
-/*Web design page and maintenance page-specific*/
+
+/**
+ * WEB DESIGN PAGE- AND MAINTENANCE PAGE-SPECIFIC
+ */
 
 .page-id-13 .grid-container {
 	max-width: 1200px;
 }
-
 
 .page-id-10 .grid-10,
 .page-id-13 .grid-10,
@@ -378,16 +308,10 @@ a.portfolio-button {
 }
 
 .price-container {
-/* Todo delete???
-	border-bottom: 2px solid #e80c7a;
-	margin-bottom: 25px;
-	padding-bottom: 30px;
-*/
 	text-align: center;
 }
 
 .price {
-	font-family: "Rubik", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 40px;
@@ -405,31 +329,19 @@ a.portfolio-button {
 	font-size: 16px;
 }
 
-/*Portfolio-page-specific*/
 
-/*
+/**
+ * PORTFOLIO PAGE-SPECIFIC
+ */
+
 .page-template-page-portfolio .site-content {
 	padding-left: 0;
 	padding-right: 0;
-	max-width: 1000px;
-    margin: 0 auto;
 }
-*/
-
-.page-template-page-portfolio .site-content {
-	padding-left: 0;
-	padding-right: 0;
-} 
 
 .page-template-page-portfolio .grid-container {
 	max-width: 1200px;
-} 
-
-/*
-.portfolio-outer-section {
-	border-bottom: 3px solid red;
 }
-*/
 
 .portfolio-inner-section {
 	max-width: 1200px;
@@ -459,24 +371,9 @@ a.portfolio-button {
 	margin-top: 0;
 }
 
-/*
-.portfolio-item-container-left {
-	padding-right: 60px;
-	clear: both;
-	margin-bottom: 80px;
-}
-*/
-
 .portfolio-clear-both {
 	clear: both;
 }
-
-/*
-.portfolio-item-container-right {
-	padding-left: 60px;
-	margin-bottom: 80px;
-}
-*/
 
 .link-to-website {
 	text-align: center;
@@ -486,22 +383,29 @@ a.portfolio-button {
 .size-large {
 	max-width: 400px;
 }
-/*Contact-page-specific*/
+
+
+/**
+ * CONTACT PAGE-SPECIFIC
+ */
 
 .contact-text-container {
 	text-align: center;
 }
 
-/*Contact Form 7 styling*/
+
+/**
+ * CONTACT FORM 7 STYLING
+ */
 
 .contact-form-positioning {
- 	width: 400px;
- 	margin: 0px auto
- }
+	width: 400px;
+	margin: 0 auto;
+}
 
 div.wpcf7 {
 	max-width: 400px;
-	margin: 0px auto
+	margin: 0 auto;
 }
 
 .wpcf7 input[type="text"],
@@ -523,7 +427,7 @@ div.wpcf7 {
 	border-radius: 1px;
 	background-color: #fff;
 	padding: 3px;
-	font-style: none;
+	font-style: normal;
 }
 
 .wpcf7-form-control {
@@ -531,7 +435,6 @@ div.wpcf7 {
 	font-size: 16px;
 	font-style: normal;
 }
-
 
 /*To target button for centering, I wrapped it in a div (in CF7 form editor box in WP) and gave it its own class*/
 .contact-form-submit-button {
@@ -562,53 +465,21 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
 	border-color: #4ddaeb;
 }
 
-/*
-.wpcf7-form .wpcf7-submit:hover {
-	background-color: #f9be0c;
-	border: 3px solid #f9be0c;
-}
-*/
-
 .ajax-loader {
 	display: none;
 }
 
-/**
- * Media queries.
- */
 
-@media (max-width: 1160px) {
-	
-	
-	
-}
+/**
+ * MEDIA QUERIES
+ */
 
 @media (max-width: 1025px) {
 	
-	/*Portfolio-page-specific*/
+	/**
+ 	 * Home page services section and services page
+ 	 */
 	
-/*
-	.portfolio-title-container {
-		margin-top: 30px;
-	}
-	
-	.portfolio-item-container-left {
-		padding-right: 0;
-		clear: both;
-		margin-bottom: 0;
-	}
-
-	.portfolio-item-container-right {
-		padding-left: 0;
-		margin-bottom: 0;
-	}
-	
-	.portfolio-item-container {
-		width: 50%;
-		margin: 0 auto;
-		border-bottom: solid 1px #000;
-	}
-*/
 	.services-container {
 		margin-left: 20%;
 		margin-right: 20%;
@@ -635,6 +506,10 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
 		padding-top: 40px;
 	}
 	
+	/**
+ 	 * Porfolio page
+ 	 */
+	
 	.portfolio-tablet-clear-both {
 		clear: both;
 	}
@@ -648,13 +523,18 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
 
 @media (max-width: 700px) {
 	
-/*
-	Portfolio-page-specific
-	.portfolio-item-container {
-		width: 70%;
+	/**
+ 	 * Home page
+ 	 */
+	
+	.testimonial-author {
+		text-align: center;
 	}
 	
-*/
+	/**
+ 	 * Home page services section and services page
+ 	 */
+	
 	.services-container {
 		margin-left: 10%;
 		margin-right: 10%;
@@ -665,40 +545,42 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	
+	/**
+ 	 * Images
+ 	 */
+	
 	.position-of-testimonial-headshot {
 		float: none;
 		margin: 0 auto 50px;
 		padding-right: 0;
-		padding-bottom: 0px;
+		padding-bottom: 0;
 	}
 	
-	.size-of-headshot /*Todo delete if not used*/ {
+	.size-of-headshot {
 		width: 200px;
 		height: 200px;
 	}
 	
-	.testimonial-author {
-		text-align: center;
-	}
 }
 
 @media (max-width: 500px) {
 	
-/*
-	Portfolio-page-specific
-	.portfolio-item-container {
-		width: 70%;
-	}
-	
-*/
+	/**
+ 	 * Home page
+ 	 */
 	
 	.page-id-7 .inside-header {
-    padding: 0px;
+    padding: 0;
 	}
 	
-	.wp-image-216 {
+	.wp-image-216 /*little bird logo*/{
 		margin-bottom: 20px;
 	}
+	
+	/**
+ 	 * Home page services section and services page
+ 	 */
 	
 	.services-container{
 		margin-left: 5%;
@@ -713,6 +595,10 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
 }
 
 @media (max-width: 350px) {
+	
+	/**
+ 	 * Site-wide general
+ 	 */
 
 	.one-container .site-content {
 		padding-left: 15px;
