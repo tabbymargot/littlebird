@@ -2,10 +2,10 @@
  Theme Name:   GeneratePress Child
  Theme URI:    http://generatepress.com
  Description:  Default GeneratePress child theme
- Author:       Thomas Usborne
- Author URI:   http://edge22.com
+ Author:       Caroline Wood
+ Author URI:   https://www.littlebirdcode.org
  Template:     generatepress
- Version:      0.1
+ Version:      0.2
  Tags: two-columns, three-columns, one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options, light, white, dark, black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, yellow
 */
 
@@ -62,6 +62,10 @@ h1 {
 
 h2 {
 	letter-spacing: 1.5px;
+}
+
+.h2-white {
+	color: #fff;
 }
 
 
@@ -152,7 +156,11 @@ a, a:visited {
 }
 
 .icon-container {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+.services-heading-container {
+	min-height: 38px;
 }
 
 .boxed-body-text{
@@ -192,11 +200,15 @@ a, a:visited {
 }
 
 .hannah-photo {
-    background-image: url(../../../wp-content/uploads/2017/05/han.jpg);
+    background-image: url(../../../wp-content/uploads/2017/06/Hannah-photo-cropped.jpg);
 }
 
 .andy-photo {
     background-image: url(../../../wp-content/uploads/2017/05/andy-and-dave-square-crop.jpg);
+}
+
+.ruth-photo {
+    background-image: url(../../../wp-content/uploads/2017/06/ruth-photo-comp.jpg);
 }
 
 .wp-image-546 /*little bird icon page divider*/{
@@ -282,7 +294,7 @@ a.portfolio-button {
 
 .package-title {
 	text-align: center;
-	margin: 0 20px 30px;
+	margin: 0 0 30px;
 	padding: 10px 0;
 }
 
@@ -492,6 +504,7 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
 	}
 	
 	.services-container-design,
+	.services-container-maintenance,
 	.maintenance-package-container {
 		padding-bottom: 50px;
 		border-bottom: solid 2px #fff;
@@ -504,6 +517,10 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
 	.services-container-maintenance,
 	.content-package-container {
 		padding-top: 40px;
+	}
+	
+	.page-id-7 .boxed-body-text {
+		margin-bottom: 2em;
 	}
 	
 	/**
@@ -574,7 +591,7 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
     padding: 0;
 	}
 	
-	.wp-image-216 /*little bird logo*/{
+	.wp-image-216 /*little bird logo*/ {
 		margin-bottom: 20px;
 	}
 	
@@ -582,7 +599,7 @@ button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[
  	 * Home page services section and services page
  	 */
 	
-	.services-container{
+	.services-container {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
